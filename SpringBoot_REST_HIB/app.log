@@ -1,0 +1,156 @@
+2016-10-05 16:50:48.982  INFO 7468 --- [main] c.g.H.HelloSpringRestApplication         : Starting HelloSpringRestApplication on SCS02-DT-013 with PID 7468 (D:\STS_Workspace\SpringBoot_REST_HIB\target\classes started by vishals1 in D:\STS_Workspace\SpringBoot_REST_HIB)
+2016-10-05 16:50:48.984  INFO 7468 --- [main] c.g.H.HelloSpringRestApplication         : No active profile set, falling back to default profiles: default
+2016-10-05 16:50:49.020  INFO 7468 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29215f06: startup date [Wed Oct 05 16:50:49 IST 2016]; root of context hierarchy
+2016-10-05 16:50:49.970  INFO 7468 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-10-05 16:50:50.067  INFO 7468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5080af59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-05 16:50:50.427  INFO 7468 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-10-05 16:50:50.437  INFO 7468 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2016-10-05 16:50:50.439  INFO 7468 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-10-05 16:50:50.523  INFO 7468 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2016-10-05 16:50:50.523  INFO 7468 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1506 ms
+2016-10-05 16:50:50.659  INFO 7468 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-10-05 16:50:50.663  INFO 7468 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-10-05 16:50:50.663  INFO 7468 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-10-05 16:50:50.663  INFO 7468 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-10-05 16:50:50.663  INFO 7468 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2016-10-05 16:50:51.237  INFO 7468 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-10-05 16:50:51.250  INFO 7468 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-10-05 16:50:51.303  INFO 7468 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.9.Final}
+2016-10-05 16:50:51.304  INFO 7468 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2016-10-05 16:50:51.305  INFO 7468 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2016-10-05 16:50:51.336  INFO 7468 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-10-05 16:50:51.426  INFO 7468 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2016-10-05 16:50:51.814  INFO 7468 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-10-05 16:50:52.072  INFO 7468 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29215f06: startup date [Wed Oct 05 16:50:49 IST 2016]; root of context hierarchy
+2016-10-05 16:50:52.144  INFO 7468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.gh.HelloSpring.controller.EmployeeControllerClass.index()
+2016-10-05 16:50:52.145  INFO 7468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/emp],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.gh.HelloSpring.modal.Employee com.gh.HelloSpring.controller.EmployeeControllerClass.setEmployee(com.gh.HelloSpring.modal.Employee) throws com.gh.HelloSpring.utils.EmployeNotFoundException
+2016-10-05 16:50:52.145  INFO 7468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/emp/{id}],methods=[GET],produces=[application/json]}" onto public com.gh.HelloSpring.modal.Employee com.gh.HelloSpring.controller.EmployeeControllerClass.getEmployeeById(int) throws com.gh.HelloSpring.utils.EmployeNotFoundException
+2016-10-05 16:50:52.145  INFO 7468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/emp/{id}],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public com.gh.HelloSpring.modal.Employee com.gh.HelloSpring.controller.EmployeeControllerClass.updateEmployee(com.gh.HelloSpring.modal.Employee) throws com.gh.HelloSpring.utils.EmployeNotFoundException
+2016-10-05 16:50:52.146  INFO 7468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/emp/{id}],methods=[DELETE]}" onto public com.gh.HelloSpring.modal.Employee com.gh.HelloSpring.controller.EmployeeControllerClass.deleteEmployee(int) throws com.gh.HelloSpring.utils.EmployeNotFoundException
+2016-10-05 16:50:52.146  INFO 7468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/emps],methods=[GET],produces=[application/json]}" onto public java.util.List<com.gh.HelloSpring.modal.Employee> com.gh.HelloSpring.controller.EmployeeControllerClass.getAllEmployee() throws com.gh.HelloSpring.utils.EmployeNotFoundException
+2016-10-05 16:50:52.147  INFO 7468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-10-05 16:50:52.148  INFO 7468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-10-05 16:50:52.189  INFO 7468 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-05 16:50:52.190  INFO 7468 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-05 16:50:52.202  INFO 7468 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2016-10-05 16:50:52.227  INFO 7468 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-05 16:50:52.453  INFO 7468 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-10-05 16:50:52.494  INFO 7468 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-10-05 16:50:52.497  INFO 7468 --- [main] c.g.H.HelloSpringRestApplication         : Started HelloSpringRestApplication in 3.877 seconds (JVM running for 4.508)
+2016-10-05 16:55:05.147  INFO 7468 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-10-05 16:55:05.147  INFO 7468 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2016-10-05 16:55:05.162  INFO 7468 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2016-10-05 16:55:05.241  INFO 7468 --- [http-nio-8080-exec-1] c.g.H.c.EmployeeControllerClass          : Enterring method deleteEmployee()::RestController
+2016-10-05 16:55:05.289 ERROR 7468 --- [http-nio-8080-exec-1] c.g.H.u.GlobalExceptionHandler           : Employee not deleted some error in database
+
+com.gh.HelloSpring.utils.EmployeNotFoundException: dfdfdfd
+	at com.gh.HelloSpring.dao.EmployeeDAOImpl.selectEmployee(EmployeeDAOImpl.java:46) ~[classes/:?]
+	at com.gh.HelloSpring.dao.EmployeeDAOImpl.deleteEmployee(EmployeeDAOImpl.java:107) [classes/:?]
+	at com.gh.HelloSpring.service.EmployeeServiceImpl.deleteEmployeeById(EmployeeServiceImpl.java:47) [classes/:?]
+	at com.gh.HelloSpring.controller.EmployeeControllerClass.deleteEmployee(EmployeeControllerClass.java:66) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_102]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_102]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_102]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_102]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) [spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114) [spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:894) [spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:654) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) [spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+
+2016-10-05 16:55:37.011  INFO 7468 --- [RMI TCP Connection(12)-192.168.50.100] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2016-10-05 16:55:37.012  INFO 7468 --- [RMI TCP Connection(12)-192.168.50.100] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29215f06: startup date [Wed Oct 05 16:50:49 IST 2016]; root of context hierarchy
+2016-10-05 16:55:37.013  INFO 7468 --- [RMI TCP Connection(12)-192.168.50.100] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-10-05 16:55:37.013  INFO 7468 --- [RMI TCP Connection(12)-192.168.50.100] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-10-05 16:55:39.658  INFO 7328 --- [main] c.g.H.HelloSpringRestApplication         : Starting HelloSpringRestApplication on SCS02-DT-013 with PID 7328 (D:\STS_Workspace\SpringBoot_REST_HIB\target\classes started by vishals1 in D:\STS_Workspace\SpringBoot_REST_HIB)
+2016-10-05 16:55:39.659  INFO 7328 --- [main] c.g.H.HelloSpringRestApplication         : No active profile set, falling back to default profiles: default
+2016-10-05 16:55:39.693  INFO 7328 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29215f06: startup date [Wed Oct 05 16:55:39 IST 2016]; root of context hierarchy
+2016-10-05 16:55:40.662  INFO 7328 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-10-05 16:55:40.763  INFO 7328 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5080af59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-05 16:55:41.089  INFO 7328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-10-05 16:55:41.097  INFO 7328 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2016-10-05 16:55:41.098  INFO 7328 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-10-05 16:55:41.174  INFO 7328 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2016-10-05 16:55:41.175  INFO 7328 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1485 ms
+2016-10-05 16:55:41.299  INFO 7328 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-10-05 16:55:41.302  INFO 7328 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-10-05 16:55:41.302  INFO 7328 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-10-05 16:55:41.303  INFO 7328 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-10-05 16:55:41.303  INFO 7328 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2016-10-05 16:55:41.851  INFO 7328 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-10-05 16:55:41.864  INFO 7328 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-10-05 16:55:41.916  INFO 7328 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.9.Final}
+2016-10-05 16:55:41.917  INFO 7328 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2016-10-05 16:55:41.918  INFO 7328 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2016-10-05 16:55:41.950  INFO 7328 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-10-05 16:55:42.037  INFO 7328 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2016-10-05 16:55:42.418  INFO 7328 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-10-05 16:55:42.676  INFO 7328 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29215f06: startup date [Wed Oct 05 16:55:39 IST 2016]; root of context hierarchy
+2016-10-05 16:55:42.741  INFO 7328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.gh.HelloSpring.controller.EmployeeControllerClass.index()
+2016-10-05 16:55:42.741  INFO 7328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/emp],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.gh.HelloSpring.modal.Employee com.gh.HelloSpring.controller.EmployeeControllerClass.setEmployee(com.gh.HelloSpring.modal.Employee) throws com.gh.HelloSpring.utils.EmployeNotFoundException
+2016-10-05 16:55:42.742  INFO 7328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/emp/{id}],methods=[GET],produces=[application/json]}" onto public com.gh.HelloSpring.modal.Employee com.gh.HelloSpring.controller.EmployeeControllerClass.getEmployeeById(int) throws com.gh.HelloSpring.utils.EmployeNotFoundException
+2016-10-05 16:55:42.742  INFO 7328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/emp/{id}],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public com.gh.HelloSpring.modal.Employee com.gh.HelloSpring.controller.EmployeeControllerClass.updateEmployee(com.gh.HelloSpring.modal.Employee) throws com.gh.HelloSpring.utils.EmployeNotFoundException
+2016-10-05 16:55:42.742  INFO 7328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/emp/{id}],methods=[DELETE]}" onto public com.gh.HelloSpring.modal.Employee com.gh.HelloSpring.controller.EmployeeControllerClass.deleteEmployee(int) throws com.gh.HelloSpring.utils.EmployeNotFoundException
+2016-10-05 16:55:42.742  INFO 7328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/emps],methods=[GET],produces=[application/json]}" onto public java.util.List<com.gh.HelloSpring.modal.Employee> com.gh.HelloSpring.controller.EmployeeControllerClass.getAllEmployee() throws com.gh.HelloSpring.utils.EmployeNotFoundException
+2016-10-05 16:55:42.744  INFO 7328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-10-05 16:55:42.744  INFO 7328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-10-05 16:55:42.771  INFO 7328 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-05 16:55:42.771  INFO 7328 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-05 16:55:42.787  INFO 7328 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2016-10-05 16:55:42.814  INFO 7328 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-05 16:55:43.092  INFO 7328 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-10-05 16:55:43.138  INFO 7328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-10-05 16:55:43.141  INFO 7328 --- [main] c.g.H.HelloSpringRestApplication         : Started HelloSpringRestApplication in 3.833 seconds (JVM running for 4.497)
+2016-10-05 16:56:07.243  INFO 7328 --- [RMI TCP Connection(7)-192.168.50.100] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2016-10-05 16:56:07.243  INFO 7328 --- [RMI TCP Connection(7)-192.168.50.100] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29215f06: startup date [Wed Oct 05 16:55:39 IST 2016]; root of context hierarchy
+2016-10-05 16:56:07.246  INFO 7328 --- [RMI TCP Connection(7)-192.168.50.100] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-10-05 16:56:07.246  INFO 7328 --- [RMI TCP Connection(7)-192.168.50.100] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
