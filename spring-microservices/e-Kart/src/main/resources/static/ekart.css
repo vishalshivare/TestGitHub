@@ -1,0 +1,44 @@
+/* Remove the navbar's default rounded borders and increase the bottom margin */
+.navbar {
+	margin-bottom: 50px;
+	border-radius: 0;
+}
+
+.nav navbar-nav {
+	text-align: center;
+}
+
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+	margin-bottom: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+	background-color: black;
+	position: fixed;
+	color: white;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+}
+
+.navbar .nav {
+	float: none;
+	text-align: center;
+}
+
+.navbar .nav>li {
+	float: none;
+	display: inline-block;
+}
+#1bgimg {
+    background-image: url('https://wallpaperscraft.com/image/girl_street_shopping_cape_town_38679_2560x1600.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
